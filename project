@@ -1,1 +1,39 @@
+1.
+text = 'Rootball'
+text = 'f' + text[1:]
+print(text)
+print(text[1:8:2])
+print(text[:])
+print(text[:2])
 
+2.
+n = int(input())
+res = {input() for _ in range(int(input()))}
+for _ in range(n-1):
+    res &= {input() for _ in range(int(input()))}
+print("Учащиеся посетившие все занятия")
+print(*sorted(res), sep='\n')
+
+
+3.
+string = str(input())
+upper = 0
+lo
+wer = 0
+for i in string:
+    if i.isupper():
+        upper += 1
+    else:
+        lower += 1
+if upper > lower:
+    print(string.upper())
+else:
+    print(string.lower())
+
+
+4.a = input()
+b = input()
+while not (a.isdigit() and b.isdigit()):
+    a = input()
+    b = input()
+    print(int(a) + int(b))
